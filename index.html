@@ -33,27 +33,27 @@
   <body>
     <header class="header">
       <div class="container header-container">
-        <nav class="header-navigation">
-          <a class="header-logo" href="./index.html"
+        <nav class="header-nav">
+          <a class="logo header-logo" href="./index.html"
             >Web<span class="header-logo-font"
               >Studio</span
             ></a
           >
-          <ul class="header-navigation-list">
+          <ul class="header-nav-list">
             <li>
               <a
                 href="./index.html"
-                class="header-navigation-link active"
+                class="header-nav-link active"
                 >Studio</a
               >
             </li>
             <li>
-              <a href="" class="header-navigation-link"
+              <a href="" class="header-nav-link"
                 >Portfolio</a
               >
             </li>
             <li>
-              <a href="" class="header-navigation-link"
+              <a href="" class="header-nav-link"
                 >Contacts</a
               >
             </li>
@@ -61,33 +61,146 @@
         </nav>
 
         <address class="header-address">
-          <ul class="contacts">
+          <ul class="header-address-list">
             <li>
               <a
                 href="mailto:info@devstudio.com"
-                class="header-address-list"
+                class="header-address-link"
                 >info@devstudio.com</a
               >
             </li>
             <li>
               <a
                 href="tel:+110001111111"
-                class="header-address-list"
+                class="header-address-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu hidden">
+        <div class="container mobile-menu-container">
+          <button type="button" class="mobile-menu-close">
+            <svg class="open-btn" width="8" height="8">
+              <use
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-nav-list">
+              <li>
+                <a
+                  href="./index.html"
+                  class="mobile-nav-link active"
+                  >Studio</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-nav-link"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a href="" class="mobile-nav-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <address class="mobile-menu-address">
+            <ul class="mobile-address-list">
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-address-link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-address-link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div>
+            <ul class="mobile-soc-media">
+              <li class="mobile-icon-list">
+                <a class="mobile-soc-link" href="">
+                  <svg
+                    class="mobile-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon-list">
+                <a class="mobile-soc-link" href="">
+                  <svg
+                    class="mobile-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon-list">
+                <a class="mobile-soc-link" href="">
+                  <svg
+                    class="mobile-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-icon-list">
+                <a class="mobile-soc-link" href="">
+                  <svg
+                    class="mobile-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      href="./images/icons.svg#icon-linkedin"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <main>
-      <section class="main-section">
+      <section class="hero-section">
         <div class="container">
-          <h1 class="main-title">
+          <h1 class="hero-title">
             Effective Solutions for Your Business?
           </h1>
-          <button type="button" class="main-button">
+          <button type="button" class="hero-button">
             Order Service
           </button>
         </div>
@@ -100,9 +213,8 @@
           </h2>
 
           <ul class="features-list">
-            <li class="feature-item">
-              <div class="feature-box">
-                <!-- added div -->
+            <li class="features-item">
+              <div class="features-box">
                 <svg
                   class="features-icon"
                   width="64"
@@ -120,8 +232,8 @@
                 solution.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-box">
+            <li class="features-item">
+              <div class="features-box">
                 <svg
                   class="features-icon"
                   width="64"
@@ -139,8 +251,8 @@
                 shortest possible time.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-box">
+            <li class="features-item">
+              <div class="features-box">
                 <svg
                   class="features-icon"
                   width="64"
@@ -158,8 +270,8 @@
                 minimize risk.
               </p>
             </li>
-            <li class="feature-item">
-              <div class="feature-box">
+            <li class="features-item">
+              <div class="features-box">
                 <svg
                   class="features-icon"
                   width="64"
@@ -183,7 +295,7 @@
 
       <section class="our-team">
         <div class="container team-container">
-          <h2 class="title">Our Team</h2>
+          <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-cards">
               <img
@@ -194,8 +306,8 @@
                 height="260"
               />
               <div class="team-info">
-                <h3 class="team-features">Mark Guerrero</h3>
-                <p class="team-features-text">
+                <h3 class="team-name">Mark Guerrero</h3>
+                <p class="team-position">
                   Product Designer
                 </p>
                 <ul class="team-social-media">
@@ -263,8 +375,8 @@
                 height="260"
               />
               <div class="team-info">
-                <h3 class="team-features">Tom Ford</h3>
-                <p class="team-features-text">
+                <h3 class="team-name">Tom Ford</h3>
+                <p class="team-position">
                   Frontend Developer
                 </p>
                 <ul class="team-social-media">
@@ -332,8 +444,8 @@
                 height="260"
               />
               <div class="team-info">
-                <h3 class="team-features">Camila Garcia</h3>
-                <p class="team-features-text">Marketing</p>
+                <h3 class="team-name">Camila Garcia</h3>
+                <p class="team-position">Marketing</p>
                 <ul class="team-social-media">
                   <li class="team-icon-list">
                     <a class="team-soc-link" href="">
@@ -399,10 +511,8 @@
                 height="260"
               />
               <div class="team-info">
-                <h3 class="team-features">Daniel Wilson</h3>
-                <p class="team-features-text">
-                  UI Designer
-                </p>
+                <h3 class="team-name">Daniel Wilson</h3>
+                <p class="team-position">UI Designer</p>
                 <ul class="team-social-media">
                   <li class="team-icon-list">
                     <a class="team-soc-link" href="">
@@ -716,7 +826,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button type="button" class="modal-open">
           <svg class="open-btn" width="8" height="8">
