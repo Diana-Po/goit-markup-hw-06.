@@ -43,6 +43,7 @@ img {
   padding: 0 16px;
   margin: 0 auto;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -348,18 +349,16 @@ img {
   background-color: #404bbf;
 }
 /* hero section */
-/* не забути повернути */
 
 .hero-section {
   background: #2e2f42;
   padding-top: 72px;
   padding-bottom: 72px;
-  /* display: flex; */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/bg-desk-2.jpg);
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -439,7 +438,7 @@ img {
   overflow: hidden;
 }
 .our-features {
-  padding: 96px 16px;
+  padding: 96px 0;
 }
 .features-box {
   display: none;
@@ -528,7 +527,7 @@ img {
   padding: 96px 0;
 }
 .team-container {
-  padding: 96px 28px;
+  width: 296px;
 }
 .team-title {
   font-weight: 700;
@@ -547,14 +546,16 @@ img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16),
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  margin-bottom: 72px;
 }
+
 .photo {
   width: 100%;
   max-width: 264px;
   height: auto;
 }
 .team-info {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -628,6 +629,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .team-container {
+    width: 100%;
+  }
   .team-list {
     display: flex;
     flex-direction: row;
@@ -652,13 +656,6 @@ img {
   .team-cards {
     width: calc((100% - (3 * 24px)) / 4);
   }
-  /* Чи це тут потрібно?
-  
-  
-.team-cards:last-child {
-  margin-right: 0;
-} 
-  */
   .team-info {
     padding: 32px 0px;
     gap: 32px;
@@ -808,6 +805,7 @@ img {
 }
 .footer-conclusion {
   text-align: center;
+  margin-bottom: 72px;
 }
 .footer-social-container,
 .footer-conclusion,
@@ -842,7 +840,6 @@ img {
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 288px;
-  margin-bottom: 72px;
   text-align: start;
 }
 .footer-media-text {
@@ -975,6 +972,11 @@ img {
   .footer-container {
     align-items: flex-start;
   }
+  .subscribe-title,
+  .footer-conclusion,
+  .footer-media-text {
+    text-align: start;
+  }
   .footer-text {
     margin-bottom: 0;
   }
@@ -989,6 +991,7 @@ img {
     background: #2e2f42;
     display: flex;
     padding: 100px 0;
+    margin-bottom: 0;
   }
   .footer-container {
     flex-direction: row;
@@ -996,9 +999,18 @@ img {
   }
   .footer-conclusion {
     margin-right: 120px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+  .footer-social-container {
+    margin-bottom: 0;
   }
   .footer-text {
     max-width: 264px;
+  }
+  .footer-media-text,
+  .subscribe-title {
+    text-align: start;
   }
   .footer-icon-list {
     position: relative;
@@ -1010,6 +1022,7 @@ img {
     margin: 0;
     margin-right: 80px;
   }
+
   .footer-form {
     flex-direction: row;
     gap: 24px;
