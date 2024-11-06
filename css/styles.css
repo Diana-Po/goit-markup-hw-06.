@@ -365,6 +365,7 @@ img {
   background-size: cover;
   margin: 0 auto;
 }
+
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -642,6 +643,7 @@ img {
   }
   .team-cards {
     width: calc((100% - 24px) / 2);
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -972,6 +974,10 @@ img {
   .footer-container {
     align-items: flex-start;
   }
+  .footer-social-container,
+  .footer-conclusion {
+    margin-bottom: 0;
+  }
   .subscribe-title,
   .footer-conclusion,
   .footer-media-text {
@@ -984,6 +990,9 @@ img {
   .footer-conclusion,
   .footer-contact {
     align-items: flex-start;
+  }
+  .footer-input {
+    width: 264px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1005,8 +1014,9 @@ img {
   .footer-social-container {
     margin-bottom: 0;
   }
+
   .footer-text {
-    max-width: 264px;
+    width: 264px;
   }
   .footer-media-text,
   .subscribe-title {
@@ -1026,9 +1036,6 @@ img {
   .footer-form {
     flex-direction: row;
     gap: 24px;
-  }
-  .footer-input {
-    width: 264px;
   }
 }
 
