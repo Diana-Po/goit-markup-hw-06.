@@ -358,14 +358,22 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-desk-2.jpg);
+    url(../images/bg-mob.jpg);
   max-width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin: 0 auto;
 }
-
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-mob-2@2x.jpg);
+  }
+}
 .hero-title {
   font-weight: 700;
   font-size: 36px;
@@ -400,11 +408,26 @@ img {
 .hero-button:focus {
   background: #404bbf;
 }
+
 @media screen and (min-width: 768px) {
   .hero-section {
     padding-top: 112px;
     padding-bottom: 112px;
     max-width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-tab.jpg);
+  }
+  @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-tab-2@2x.jpg);
+    }
   }
   .hero-title {
     font-size: 56px;
